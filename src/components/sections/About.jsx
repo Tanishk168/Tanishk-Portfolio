@@ -28,9 +28,8 @@ export const About = () => {
         </h1>
         <div className="rounded-xl border border-white/20 p-8 text-center hover:-translate-y-1 hover:shadow-[1px_2px_8px_rgba(59,130,246,0.2)] transition-all">
           <p className="text-gray-300 mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-            ipsam asperiores cupiditate quidem esse a! Optio exercitationem
-            ducimus iusto quasi?
+            I specialize in frontend development, creating responsive and dynamic web interfaces using technologies like ReactJS, Tailwind CSS, HTML, and JavaScript.
+Currently, I'm expanding my skills by learning backend development with Node.js , MongoDB,SQL.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* frontend */}
