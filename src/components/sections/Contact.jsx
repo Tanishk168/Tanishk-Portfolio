@@ -14,10 +14,12 @@ export const Contact = () => {
     emailjs
       .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPELATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
+        console.log(result.text);
         alert("Message Sent Successfully");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error("EmailJS error:", error);
         alert("Oops! something went wrong.");
       });
   };
