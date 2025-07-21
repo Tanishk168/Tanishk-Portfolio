@@ -4,13 +4,13 @@ export const Home = () => {
   return (
     <section
       id="Home"
-      className="min-h-screen flex items-center justify-center relative "
+      className="min-h-[50vh]  md:min-h[85vh] flex items-center  justify-center relative "
         
     >
       <RevealOnScroll>
 
         <div className="text-center z-10 px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-tl from-blue-400 via-purple-600 to-pink-600 bg-clip-text text-transparent mt-20 ">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-tl from-blue-400 via-purple-600 to-pink-600 bg-clip-text text-transparent mt-40">
                 Hi, I'm Tanishk Sharma
             </h1>
             <p className="text-gray-400 text-lg max-w-lg mx-auto">I'm a passionate web developer skilled in building responsive and dynamic websites using modern tools like React, Tailwind CSS, and JavaScript. I love turning ideas into real-world applications that solve problems and deliver great user experiences.
