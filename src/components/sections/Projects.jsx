@@ -1,8 +1,9 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
-import shoplifier_desktop from '/src/assets/shoplifier_desktop.png';
-import portfolio_desktop from '/src/assets/portfolio_desktop.png'
-import khatabook_desktop from '/src/assets/khatabook_desktop.png'
+import shoplifier_desktop from "/src/assets/shoplifier_desktop.png";
+import portfolio_desktop from "/src/assets/portfolio_desktop.png";
+import khatabook_desktop from "/src/assets/khatabook_desktop.png";
+import fraudfree_desktop from "/src/assets/fraudfree_desktop.png";
 
 export const Projects = () => {
   return (
@@ -50,17 +51,72 @@ export const Projects = () => {
                 >
                   View Project ➨{" "}
                 </a>
-                {/* add image of project in future */}
+                {/* image */}
                 <div className="w-full max-h-64 overflow-hidden rounded-lg shadow-lg">
-  <img
-    src={portfolio_desktop}
-    alt="portfolio preview"
-    className="w-full h-full object-contain"
-  />
-</div>
+                  <img
+                    src={portfolio_desktop}
+                    alt="portfolio preview"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
-            {/* item2 grid */}
+
+            {/* item 2  */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[1px_2px_8px_rgba(59,130,246,0.2)] transition-all ">
+              <h3 className="text-xl font-bold mb-2">FraudFree</h3>
+
+              <p className="text-gray-400 mb-4">
+                A full-stack MERN application that allows users to report and
+                view fraudulent companies.. Key features include CRUD
+                operations, city-based filtering, and a modern responsive UI.
+                Designed to strengthen skills in RESTful API design, React
+                component architecture, state management, and MongoDB Atlas
+                cloud database integration.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "HTML",
+                  "JavaScript",
+                  "ReactJS",
+                  "TailwindCSS",
+                  "Postman",
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB Atlas",
+                  "REST API",
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-500/10 text-blue-500 text-sm py-1 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[2px_3px_8px_rgba(59,130,246,0.2)] transition-all "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* view project */}
+              <div className="flex justify-between items-center my-2">
+                <a
+                  href="https://fraudfree.netlify.app/"
+                  className="text-blue-500 hover:text-blue-300 transition-colors"
+                >
+                  View Project ➨{" "}
+                </a>
+
+                {/* image */}
+                <div className="w-full max-h-64 overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src={fraudfree_desktop}
+                    alt="FraudFree project preview"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* item3 grid */}
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[1px_2px_8px_rgba(59,130,246,0.2)] transition-all ">
               <h3 className="text-xl font-bold mb-2 ">Shoplifier</h3>
@@ -101,15 +157,15 @@ export const Projects = () => {
                 </a>
                 {/* add image of project in future */}
                 <div className="w-full max-h-64 overflow-hidden rounded-lg shadow-lg">
-  <img
-    src={shoplifier_desktop}
-    alt="Shoplifier project preview"
-    className="w-full h-full object-contain"
-  />
-</div>
+                  <img
+                    src={shoplifier_desktop}
+                    alt="Shoplifier project preview"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
-            {/* item3 grid */}
+            {/* item4 grid */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-[1px_2px_8px_rgba(59,130,246,0.2)] transition-all ">
               <h3 className="text-xl font-bold mb-4">Khatabook Solution</h3>
 
@@ -147,13 +203,13 @@ export const Projects = () => {
                   View Project ➨{" "}
                 </a>
                 {/* add image of project in future */}
-               <div className="w-full max-h-64 overflow-hidden rounded-lg shadow-lg">
-  <img
-    src={khatabook_desktop}
-    alt="khatabook preview"
-    className="w-full h-full object-contain"
-  />
-</div>
+                <div className="w-full max-h-64 overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src={khatabook_desktop}
+                    alt="khatabook preview"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
